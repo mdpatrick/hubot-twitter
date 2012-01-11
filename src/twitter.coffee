@@ -34,9 +34,12 @@ class Twitter extends Adapter
      message = data.text.replace reg, self.robot.name
      console.log "hubot command: #{message}"
 
-     self.receive new Robot.TextMessage data.user.screen_name, message
-     if err
-       console.log "received error: #{err}"
+     if data.source == "Nurph"
+       console.log "This tweet came from #{data.source} so I won't respond."
+     else
+       self.receive new Robot.TextMessage data.user.screen_name, message
+       if err
+         console.log "received error: #{err}"
 
    @bot = bot
 
