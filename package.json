@@ -1,11 +1,11 @@
 {
   "name": "hubot-twitter",
   "version": "2.0.4",
-  "author": "Mathilde Lemee",
+  "author": "Neil Cauldwell",
   "keywords": [
-    "github hubot twitter adapter"
+    "github hubot twitter adapter fork"
   ],
-  "description": "A Twitter adapter for hubot",
+  "description": "A fork of the original Twitter adapter for hubot",
   "licenses": [
     {
       "type": "MIT",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mathildelemee/hubot-twitter.git"
+    "url": "git://github.com/neilcauldwell/hubot-twitter.git"
   },
   "dependencies": {
     "hubot": ">=2.0.5",
