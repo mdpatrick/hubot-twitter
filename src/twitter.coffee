@@ -34,7 +34,7 @@ class Twitter extends Adapter
      message = data.text.replace reg, self.robot.name
      console.log "hubot command: #{message}"
 
-     if data.source == "Nurph"
+     if data.source == '<a href="http://nurph.com" rel="nofollow">Nurph</a>'
        console.log "This tweet came from #{data.source} so I won't respond."
      else
        self.receive new Robot.TextMessage data.user.screen_name, message
